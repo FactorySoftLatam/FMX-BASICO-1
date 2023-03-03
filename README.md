@@ -11,7 +11,7 @@ Se requiere desarrollar un directorio telefónico que contenga los números de t
 
 ## Roles definition  
 DROP TABLE if exists roles;  
-CREATE TABLE roles (  
+CREATE TABLE roles (   
 	rol_nid INTEGER PRIMARY KEY ,  
 	rol_cnombre TEXT(100) not null	 
 );   
