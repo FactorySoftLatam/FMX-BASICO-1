@@ -1,0 +1,80 @@
+object fPPal: TfPPal
+  Left = 0
+  Top = 0
+  Caption = 'Men'#250' Directorio'
+  ClientHeight = 370
+  ClientWidth = 604
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object MainMenu1: TMainMenu
+    Left = 72
+    Top = 72
+    object MenuItem1: TMenuItem
+      Text = 'Directorio'
+      object MenuItem2: TMenuItem
+        Locked = True
+        Text = 'Gestionar Usuario'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Locked = True
+        Text = 'Listar Usuarios'
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+  object Panel1: TPanel
+    Align = Center
+    Size.Width = 481.000000000000000000
+    Size.Height = 99.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label1: TLabel
+      Align = Top
+      StyledSettings = [Family, FontColor]
+      Size.Width = 481.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Bienvenido'
+      TabOrder = 4
+    end
+    object Label2: TLabel
+      Align = Top
+      StyledSettings = [Family, FontColor]
+      Position.Y = 42.000000000000000000
+      Size.Width = 481.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Bienvenido'
+      TabOrder = 2
+    end
+    object Label3: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 481.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Bienvenido'
+      TabOrder = 3
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 68
+    Top = 5
+  end
+end

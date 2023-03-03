@@ -1,0 +1,99 @@
+object fLogin: TfLogin
+  Left = 0
+  Top = 0
+  ActiveControl = edUser
+  BorderStyle = None
+  Caption = 'Login'
+  ClientHeight = 163
+  ClientWidth = 347
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnHide = FormHide
+  DesignerMasterStyle = 0
+  object edUser: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 124.000000000000000000
+    Position.Y = 42.000000000000000000
+    Size.Width = 183.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+  end
+  object edPassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Password = True
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 124.000000000000000000
+    Position.Y = 82.000000000000000000
+    Size.Width = 183.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 44.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Usuario'
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 32.000000000000000000
+    Position.Y = 84.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Contrase'#241'a'
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Cursor = crHandPoint
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 192.000000000000000000
+    Position.Y = 134.000000000000000000
+    TabOrder = 5
+    Text = 'Aceptar'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Cancel = True
+    Cursor = crHandPoint
+    StyledSettings = [Family, Size, FontColor]
+    ModalResult = 2
+    Position.X = 56.000000000000000000
+    Position.Y = 136.000000000000000000
+    TabOrder = 4
+    Text = 'Cancelar'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = Button2Click
+  end
+  object Label3: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Registre Usuario y Contrase'#241'a'
+    TabOrder = 6
+  end
+  object Line1: TLine
+    LineType = Diagonal
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

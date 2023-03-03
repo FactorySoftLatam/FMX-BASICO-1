@@ -1,0 +1,401 @@
+object fGestionar: TfGestionar
+  Left = 0
+  Top = 0
+  Caption = 'Gestionar Usuarios'
+  ClientHeight = 528
+  ClientWidth = 827
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 827.000000000000000000
+    Size.Height = 487.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object GridBindSourceDB1: TGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 827.000000000000000000
+      Size.Height = 326.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      RowCount = 0
+      Viewport.Width = 827.000000000000000000
+      Viewport.Height = 326.000000000000000000
+    end
+    object Panel2: TPanel
+      Align = Top
+      Size.Width = 827.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object NavigatorBindSourceDB1: TBindNavigator
+        Align = Center
+        HitTest = True
+        Size.Width = 437.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        DataSource = BindSourceDB1
+        xRadius = 4.000000000000000000
+        yRadius = 4.000000000000000000
+      end
+    end
+    object Panel4: TPanel
+      Align = Top
+      Position.Y = 34.000000000000000000
+      Size.Width = 827.000000000000000000
+      Size.Height = 127.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+  end
+  object Panel3: TPanel
+    Align = Top
+    Size.Width = 827.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+  end
+  object Editusu_cnombre: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 160.000000000000000000
+    Position.Y = 115.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    CharCase = ecUpperCase
+    object Labelusu_cnombre: TLabel
+      Position.X = -144.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Nombre(s) y Apellido(s)'
+      TabOrder = 0
+    end
+  end
+  object Editusu_nid: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 160.000000000000000000
+    Position.Y = 89.000000000000000000
+    object Labelusu_nid: TLabel
+      Position.X = -144.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'ID'
+      TabOrder = 0
+    end
+  end
+  object Editusu_cnum_celular: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 492.000000000000000000
+    Position.Y = 87.000000000000000000
+    object Labelusu_cnum_celular: TLabel
+      Position.X = -86.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'No. Celular'
+      TabOrder = 0
+    end
+  end
+  object ComboBoxusu_ccargo: TComboBox
+    Position.X = 160.000000000000000000
+    Position.Y = 143.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Labelusu_ccargo: TLabel
+      Position.X = -144.000000000000000000
+      Size.Width = 144.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Cargo'
+      TabOrder = 85
+    end
+  end
+  object Editusu_cnum_tele_fijo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 492.000000000000000000
+    Position.Y = 113.000000000000000000
+    object Labelusu_cnum_tele_fijo: TLabel
+      Position.X = -88.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Tel'#233'fono Fijo'
+      TabOrder = 0
+    end
+  end
+  object Editusu_cnum_extension: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 492.000000000000000000
+    Position.Y = 140.000000000000000000
+    object Labelusu_cnum_extension: TLabel
+      Position.X = -87.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Extension'
+      TabOrder = 0
+    end
+  end
+  object ComboBoxusu_cestado: TComboBox
+    EnableDragHighlight = False
+    Position.X = 492.000000000000000000
+    Position.Y = 168.000000000000000000
+    StyleLookup = 'comboboxstyle'
+    TabOrder = 7
+    object Labelusu_cestado: TLabel
+      Position.X = -88.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Estado'
+      TabOrder = 85
+    end
+  end
+  object ComboBoxusu_nperfil: TComboBox
+    Position.X = 160.000000000000000000
+    Position.Y = 172.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Labelusu_nperfil: TLabel
+      Position.X = -144.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Perfil'
+      TabOrder = 85
+    end
+  end
+  object Editusu_cusuario: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 616.000000000000000000
+    Position.Y = 100.000000000000000000
+    Size.Width = 162.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    CharCase = ecLowerCase
+    object Labelusu_cusuario: TLabel
+      Position.Y = -19.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Usuario'
+      TabOrder = 0
+    end
+  end
+  object Editusu_cpassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Password = True
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 616.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 162.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Family, Size, FontColor]
+    object Labelusu_cpassword: TLabel
+      Position.Y = -19.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'Contrase'#241'a'
+      TabOrder = 0
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmDatos.UsuariosTable
+    ScopeMappings = <>
+    Left = 520
+    Top = 392
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 300
+    Top = 261
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      Columns = <
+        item
+          MemberName = 'usu_nid'
+          Header = 'ID'
+          TextWidth = 5
+        end
+        item
+          MemberName = 'usu_cnombre'
+          Header = 'Nombre(s) y Apellido(s)'
+          TextWidth = 30
+        end
+        item
+          MemberName = 'usu_ccargo'
+          Header = 'Cargo'
+          TextWidth = 20
+        end
+        item
+          MemberName = 'usu_cnum_celular'
+          Header = 'No. Celular'
+          TextWidth = 10
+        end
+        item
+          MemberName = 'usu_cnum_tele_fijo'
+          Header = 'Tel'#233'fono Fijo'
+          TextWidth = 10
+        end
+        item
+          MemberName = 'usu_cnum_extension'
+          Header = 'Ext.'
+          TextWidth = 10
+        end
+        item
+          MemberName = 'usu_nperfil'
+          Header = 'Perfil'
+          TextWidth = 20
+        end
+        item
+          MemberName = 'usu_cestado'
+          Header = 'Estado'
+          TextWidth = 10
+        end>
+    end
+    object LinkControlToFieldusu_cnombre: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cnombre'
+      Control = Editusu_cnombre
+      Track = False
+    end
+    object LinkControlToFieldusu_nid: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_nid'
+      Control = Editusu_nid
+      Track = False
+    end
+    object LinkControlToFieldusu_cnum_celular: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cnum_celular'
+      Control = Editusu_cnum_celular
+      Track = False
+    end
+    object LinkControlToFieldusu_cnum_tele_fijo: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cnum_tele_fijo'
+      Control = Editusu_cnum_tele_fijo
+      Track = False
+    end
+    object LinkControlToFieldusu_cnum_extension: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cnum_extension'
+      Control = Editusu_cnum_extension
+      Track = False
+    end
+    object LinkFillControlToField3: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cestado'
+      Control = ComboBoxusu_cestado
+      Track = True
+      FillDataSource = BindSourceDB4
+      FillValueFieldName = 'est_cestado'
+      FillDisplayFieldName = 'est_cestado'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_nperfil'
+      Control = ComboBoxusu_nperfil
+      Track = True
+      FillDataSource = BindSourceDB2
+      FillValueFieldName = 'rol_nid'
+      FillDisplayFieldName = 'rol_cnombre'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_ccargo'
+      Control = ComboBoxusu_ccargo
+      Track = True
+      FillDataSource = BindSourceDB3
+      FillValueFieldName = 'car_cnombre'
+      FillDisplayFieldName = 'car_cnombre'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToFieldusu_cusuario: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cusuario'
+      Control = Editusu_cusuario
+      Track = False
+    end
+    object LinkControlToFieldusu_cpassword: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'usu_cpassword'
+      Control = Editusu_cpassword
+      Track = False
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = dmDatos.RolesTable
+    ScopeMappings = <>
+    Left = 520
+    Top = 342
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = dmDatos.CargosTable
+    ScopeMappings = <>
+    Left = 520
+    Top = 232
+  end
+  object BindSourceDB4: TBindSourceDB
+    DataSet = dmDatos.EstadosTable
+    ScopeMappings = <>
+    Left = 520
+    Top = 288
+  end
+end

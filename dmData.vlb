@@ -1,0 +1,15 @@
+﻿[UsuariosTable]
+Coordinates=123,10,103,177
+
+[Connection]
+Coordinates=24,196,70,33
+
+[RolesTable]
+Coordinates=236,10,69,87
+
+[DriverLink]
+Coordinates=194,321,65,33
+
+[]
+Coordinates=263,313,77,33
+

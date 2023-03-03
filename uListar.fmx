@@ -1,0 +1,123 @@
+object fListar: TfListar
+  Left = 0
+  Top = 0
+  Caption = 'Listar Usuarios'
+  ClientHeight = 480
+  ClientWidth = 778
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Panel3: TPanel
+    Align = Top
+    Size.Width = 778.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+  end
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 778.000000000000000000
+    Size.Height = 439.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    object GridBindSourceDB1: TGrid
+      Align = Client
+      CanFocus = True
+      ClipChildren = True
+      Size.Width = 778.000000000000000000
+      Size.Height = 405.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      RowCount = 0
+      Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
+      Viewport.Width = 774.000000000000000000
+      Viewport.Height = 380.000000000000000000
+    end
+    object Panel2: TPanel
+      Align = Top
+      Size.Width = 778.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object NavigatorBindSourceDB1: TBindNavigator
+        Align = Center
+        HitTest = True
+        Size.Width = 437.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        DataSource = BindSourceDB1
+        VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbRefresh]
+        xRadius = 4.000000000000000000
+        yRadius = 4.000000000000000000
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmDatos.UsuariosTable
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = GridBindSourceDB1
+      Columns = <
+        item
+          MemberName = 'usu_nid'
+          Header = 'ID'
+          TextWidth = 5
+        end
+        item
+          MemberName = 'usu_cnombre'
+          Header = 'Nombres y Apellidos'
+          TextWidth = 40
+        end
+        item
+          MemberName = 'usu_ccargo'
+          Header = 'Cargo'
+          TextWidth = 30
+        end
+        item
+          MemberName = 'usu_cnum_celular'
+          Header = 'usu_cnum_celular'
+          Visible = False
+        end
+        item
+          MemberName = 'usu_cnum_tele_fijo'
+          Header = 'Tel'#233'fono Fijo'
+          TextWidth = 25
+        end
+        item
+          MemberName = 'usu_cnum_extension'
+          Header = 'Extensi'#243'n'
+        end
+        item
+          MemberName = 'usu_nperfil'
+          Visible = False
+        end
+        item
+          MemberName = 'usu_cestado'
+          Visible = False
+        end
+        item
+          MemberName = 'usu_cusuario'
+          Visible = False
+        end
+        item
+          MemberName = 'usu_cpassword'
+          Visible = False
+        end>
+    end
+  end
+end
