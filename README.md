@@ -9,9 +9,12 @@ Se requiere desarrollar un directorio telefónico que contenga los números de t
 
 # Base de datos y Tablas
 
+##Base de datos: 
+ Archivo dbdirectorio.db (Carpeta Data)
+
 ## Roles definition  
 DROP TABLE if exists roles;  
-CREATE TABLE roles (   
+CREATE TABLE roles (  
 	rol_nid INTEGER PRIMARY KEY ,  
 	rol_cnombre TEXT(100) not null	 
 );   
@@ -76,7 +79,6 @@ usu_cnum_extension, usu_nperfil,usu_cestado,usu_cusuario,usu_cpassword) VALUES
 	 2,'RETIRADO','juana.arcos','654321');  
 
 	 
-	 
-
+# 
 	 
 
