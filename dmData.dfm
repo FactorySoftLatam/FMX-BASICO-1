@@ -32,59 +32,70 @@ object dmDatos: TdmDatos
     end
   end
   object UsuariosTable: TFDQuery
+    BeforePost = UsuariosTableBeforePost
     Connection = Connection
     SQL.Strings = (
       'SELECT * FROM usuarios')
     Left = 72
     Top = 161
     object UsuariosTableusu_nid: TFDAutoIncField
+      DisplayLabel = 'ID'
       FieldName = 'usu_nid'
       Origin = 'usu_nid'
       ProviderFlags = [pfInWhere, pfInKey]
       ReadOnly = True
     end
     object UsuariosTableusu_cnombre: TWideStringField
+      DisplayLabel = '[Nombre]'
       FieldName = 'usu_cnombre'
       Origin = 'usu_cnombre'
       Required = True
       Size = 100
     end
     object UsuariosTableusu_ccargo: TWideStringField
+      DisplayLabel = '[Cargo]'
       FieldName = 'usu_ccargo'
       Origin = 'usu_ccargo'
       Required = True
       Size = 100
     end
     object UsuariosTableusu_cnum_celular: TWideStringField
+      DisplayLabel = '[No. Celular]'
       FieldName = 'usu_cnum_celular'
       Origin = 'usu_cnum_celular'
       Size = 50
     end
     object UsuariosTableusu_cnum_tele_fijo: TWideStringField
+      DisplayLabel = '[Tel'#233'fono Fijo]'
       FieldName = 'usu_cnum_tele_fijo'
       Origin = 'usu_cnum_tele_fijo'
       Size = 50
     end
     object UsuariosTableusu_cnum_extension: TWideStringField
+      DisplayLabel = '[Extensi'#243'n]'
       FieldName = 'usu_cnum_extension'
       Origin = 'usu_cnum_extension'
       Size = 10
     end
     object UsuariosTableusu_nperfil: TIntegerField
+      DisplayLabel = '[Perfil o Rol]'
       FieldName = 'usu_nperfil'
       Origin = 'usu_nperfil'
     end
     object UsuariosTableusu_cestado: TWideStringField
+      DisplayLabel = '[Estado]'
       FieldName = 'usu_cestado'
       Origin = 'usu_cestado'
       Size = 10
     end
     object UsuariosTableusu_cusuario: TWideStringField
+      DisplayLabel = '[Usuario]'
       FieldName = 'usu_cusuario'
       Origin = 'usu_cusuario'
       Size = 100
     end
     object UsuariosTableusu_cpassword: TWideStringField
+      DisplayLabel = '[Contrase'#241'a]'
       FieldName = 'usu_cpassword'
       Origin = 'usu_cpassword'
       Size = 100

@@ -38,6 +38,7 @@ type
     qUsuarios: TFDQuery;
     UsuariosTableusu_cpassword: TWideStringField;
     procedure DataModuleCreate(Sender: TObject);
+    procedure UsuariosTableBeforePost(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -94,6 +95,35 @@ begin
         ShowMessage(e.Message);
     end;
   end;
+end;
+
+procedure TdmDatos.UsuariosTableBeforePost(DataSet: TDataSet);
+var
+  I : Integer;
+  columna, titulo: string;
+begin
+
+
+  for I := 1 to DataSet.FieldCount-1 do
+  begin
+    columna := DataSet.Fields[I].FieldName;
+    titulo  := DataSet.Fields[I].DisplayLabel;
+    if pos('[', titulo) > 0 then
+    begin
+      if DataSet.FieldByName(columna).IsNull then
+      begin
+          ShowMessage('DEBE Registrar valor para '+ titulo );
+          DataSet.FieldByName(columna).FocusControl;
+          Abort;
+      end;
+    end;
+  end;
+
+  {Se podrían utilizar expresiones regulares para validar
+    Teléfono Fijo, Celular y Extensión telefónica...}
+
+
+  
 end;
 
 end.
