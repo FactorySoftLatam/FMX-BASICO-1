@@ -6,6 +6,24 @@ Se requiere desarrollar un directorio telefónico que contenga los números de t
 1. [Delphi Community Edition](https://www.embarcadero.com/es/products/delphi/starter). 
 2. [SQL Lite](https://www.sqlite.org/download.html)
 3. [TortoiseGit](https://tortoisegit.org/download/)
+4. [DBeaver Community](https://dbeaver.io/download/)
+
+## TortoiseGit
+TortoiseGit es una interfaz de shell de Windows para Git y se basa en TortoiseSVN. Es de código abierto y se puede construir completamente con software disponible gratuitamente.  
+Dado que no es una integración para un IDE específico como Visual Studio, Eclipse u otros, puede usarlo con las herramientas de desarrollo que desee y con cualquier tipo de archivo. La interacción principal con TortoiseGit será utilizando el menú contextual del explorador de Windows.  
+TortoiseGit lo apoya con tareas regulares, como confirmar, mostrar registros, diferenciar dos versiones, crear ramas y etiquetas, crear parches, etc. (consulte nuestras capturas de pantalla o documentación).  
+Se desarrolla bajo la GPL. Lo que significa que es completamente gratuito para cualquier persona, incluso en un entorno comercial, sin ninguna restricción. El código fuente también está disponible gratuitamente, por lo que incluso puede desarrollar su propia versión si lo desea.   
+
+## Delphi Community Edition
+Delphi Community Edition, que se comparte gratuitamente con nuestra comunidad de desarrolladores freelance, empresas emergentes, estudiantes y organizaciones sin fines de lucro, es un IDE con todas las características para crear aplicaciones iOS, Android, Windows y macOS a partir de un código fuente Delphi (licencia de uso comercial limitado). Delphi Community Edition incluye un editor de código, potentes herramientas de depuración, acceso integrado a bases de datos locales populares con datos en tiempo real en tiempo de diseño, funcionalidad Bluetooth y de IoT y un diseñador visual de UI con soporte para diseño de píxel perfecto y específico para la plataforma.
+
+## SQL Lite
+SQLite se ha utilizado con gran éxito como formato de archivo en disco para aplicaciones de escritorio como sistemas de control de versiones, herramientas de análisis financiero, salas de catalogación y edición de medios, CAD paquetes, programas de mantenimiento de registros, etc. Lo tradicional La operación File/Open llama a sqlite3_open() para adjuntarlas a la base de datos archivo. Las actualizaciones se realizan automáticamente a medida que se revisa el contenido de la aplicación por lo que la opción de menú Archivo/Guardar se vuelve superflua. El archivo/Save_As La opción de menú se puede implementar utilizando la API de copia de seguridad.
+
+## DBeaver Community
+Herramienta de base de datos multiplataforma gratuita para desarrolladores, administradores de bases de datos, analistas y todas las personas que necesitan trabajar con bases de datos. Soporta todas las bases de datos populares: MySQL, PostgreSQL, SQLite, Oracle, DB2, SQL Server, Sybase, MS Access, Teradata, Firebird, Apache Hive, Phoenix, Presto, etc.
+
+
 
 # Base de datos y Tablas
 
