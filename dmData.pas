@@ -39,6 +39,7 @@ type
     UsuariosTableusu_cpassword: TWideStringField;
     procedure DataModuleCreate(Sender: TObject);
     procedure UsuariosTableBeforePost(DataSet: TDataSet);
+    procedure UsuariosTableBeforeInsert(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -63,9 +64,9 @@ begin
   try
     {Connection.Params.Values['DriverID'] := 'SQLite';
     Connection.Params.Values['Database'] := MyDBFile;}
-    //Path := ExtractFilePath(ParamStr(0));
-    Path := '..\..\Data\';
-    DBFile := Path + 'dbdirectorio.db';
+    Path := ExtractFilePath(ParamStr(0));
+    //Path := '..\..\Data\';
+    DBFile := Path + '\Data\dbdirectorio.db';
     if not FileExists(dbFile) then
     begin
       ShowMessage('Base no encontarad');
@@ -94,6 +95,18 @@ begin
     begin
         ShowMessage(e.Message);
     end;
+  end;
+end;
+
+procedure TdmDatos.UsuariosTableBeforeInsert(DataSet: TDataSet);
+var
+  estado : TDataSetState;
+begin
+  try
+    raise Exception.Create('Error Message');
+  except
+    estado := DataSet.State;
+    ShowMessage('Algo');
   end;
 end;
 

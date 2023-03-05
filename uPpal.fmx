@@ -75,6 +75,6 @@ object fPPal: TfPPal
     Methods = <>
     OutputConverters = <>
     Left = 68
-    Top = 5
+    Top = 13
   end
 end
