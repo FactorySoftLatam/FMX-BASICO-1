@@ -41,6 +41,7 @@ uses dmData;
 procedure TfListar.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   BindSourceDB1.DataSource.DataSet.Close;
+  Action := TCloseAction.caFree;
 end;
 
 procedure TfListar.FormCreate(Sender: TObject);

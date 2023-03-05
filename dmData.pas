@@ -39,7 +39,6 @@ type
     UsuariosTableusu_cpassword: TWideStringField;
     procedure DataModuleCreate(Sender: TObject);
     procedure UsuariosTableBeforePost(DataSet: TDataSet);
-    procedure UsuariosTableBeforeInsert(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -98,24 +97,11 @@ begin
   end;
 end;
 
-procedure TdmDatos.UsuariosTableBeforeInsert(DataSet: TDataSet);
-var
-  estado : TDataSetState;
-begin
-  try
-    raise Exception.Create('Error Message');
-  except
-    estado := DataSet.State;
-    ShowMessage('Algo');
-  end;
-end;
-
 procedure TdmDatos.UsuariosTableBeforePost(DataSet: TDataSet);
 var
   I : Integer;
   columna, titulo: string;
 begin
-
 
   for I := 1 to DataSet.FieldCount-1 do
   begin
@@ -127,7 +113,7 @@ begin
       begin
           ShowMessage('DEBE Registrar valor para '+ titulo );
           DataSet.FieldByName(columna).FocusControl;
-          Abort;
+          //Abort;
       end;
     end;
   end;

@@ -32,7 +32,6 @@ object dmDatos: TdmDatos
     end
   end
   object UsuariosTable: TFDQuery
-    BeforeInsert = UsuariosTableBeforeInsert
     BeforePost = UsuariosTableBeforePost
     Connection = Connection
     SQL.Strings = (
@@ -150,7 +149,7 @@ object dmDatos: TdmDatos
     Connection = Connection
     SQL.Strings = (
       'SELECT * FROM usuarios')
-    Left = 168
+    Left = 152
     Top = 152
   end
 end

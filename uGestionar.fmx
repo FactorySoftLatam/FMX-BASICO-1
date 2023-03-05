@@ -26,8 +26,8 @@ object fGestionar: TfGestionar
       Size.PlatformDefault = False
       TabOrder = 2
       RowCount = 0
-      Viewport.Width = 827.000000000000000000
-      Viewport.Height = 326.000000000000000000
+      Viewport.Width = 823.000000000000000000
+      Viewport.Height = 301.000000000000000000
     end
     object Panel2: TPanel
       Align = Top
@@ -126,7 +126,7 @@ object fGestionar: TfGestionar
       Size.PlatformDefault = False
       TextSettings.WordWrap = False
       Text = 'Cargo'
-      TabOrder = 85
+      TabOrder = 86
     end
   end
   object Editusu_cnum_tele_fijo: TEdit
@@ -175,7 +175,7 @@ object fGestionar: TfGestionar
       Size.PlatformDefault = False
       TextSettings.WordWrap = False
       Text = 'Estado'
-      TabOrder = 85
+      TabOrder = 86
     end
   end
   object ComboBoxusu_nperfil: TComboBox
@@ -189,7 +189,7 @@ object fGestionar: TfGestionar
       Position.X = -144.000000000000000000
       TextSettings.WordWrap = False
       Text = 'Perfil'
-      TabOrder = 85
+      TabOrder = 86
     end
   end
   object Editusu_cusuario: TEdit

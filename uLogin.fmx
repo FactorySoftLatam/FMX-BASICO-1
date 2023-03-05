@@ -57,7 +57,7 @@ object fLogin: TfLogin
     Text = 'Contrase'#241'a'
     TabOrder = 2
   end
-  object Button1: TButton
+  object btnOK: TButton
     Cursor = crHandPoint
     StyledSettings = [Family, Size, FontColor]
     Position.X = 192.000000000000000000
@@ -65,7 +65,7 @@ object fLogin: TfLogin
     TabOrder = 5
     Text = 'Aceptar'
     TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button1Click
+    OnClick = btnOKClick
   end
   object Button2: TButton
     Cancel = True

@@ -34,8 +34,8 @@ object fListar: TfListar
       TabOrder = 2
       RowCount = 0
       Options = [ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, AlwaysShowSelection, Tabs, Header, HeaderClick, AutoDisplacement]
-      Viewport.Width = 774.000000000000000000
-      Viewport.Height = 380.000000000000000000
+      Viewport.Width = 778.000000000000000000
+      Viewport.Height = 405.000000000000000000
     end
     object Panel2: TPanel
       Align = Top

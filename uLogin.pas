@@ -30,13 +30,13 @@ type
     edPassword: TEdit;
     Label1: TLabel;
     Label2: TLabel;
-    Button1: TButton;
+    btnOK: TButton;
     Button2: TButton;
     Label3: TLabel;
     Line1: TLine;
     procedure Button2Click(Sender: TObject);
     procedure FormHide(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure btnOKClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -54,7 +54,7 @@ uses uPpal, dmData;
 
 
 
-procedure TfLogin.Button1Click(Sender: TObject);
+procedure TfLogin.btnOKClick(Sender: TObject);
 var
   User: TUser;
   Perfil : string;
@@ -66,7 +66,7 @@ begin
   if User.login(edUser.Text,edPassword.Text) then
   begin
    fPPal.MenuItem2.Enabled := User.uPerfil=1;
-   fPPal.MenuItem2.Enabled := (User.uPerfil = 1) or (User.uPerfil=2);
+   fPPal.MenuItem1.Enabled := (User.uPerfil = 1) or (User.uPerfil=2);
    if User.uPerfil=1 then
    begin
       Perfil := 'ADMINISTRADOR';
