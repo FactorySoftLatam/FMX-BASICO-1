@@ -29,6 +29,7 @@ Herramienta de base de datos multiplataforma gratuita para desarrolladores, admi
 
 ##Base de datos: 
  Archivo dbdirectorio.db (Carpeta Data)
+ Para su funcionamiento en producción debe ser ubicada en la carpeta /Data, dentro de la carpeta en donde se incluya el ejecutable.
 
 ## Roles definition  
 DROP TABLE if exists roles;  
